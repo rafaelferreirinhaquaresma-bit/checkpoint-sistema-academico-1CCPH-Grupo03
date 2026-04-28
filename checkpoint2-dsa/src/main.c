@@ -29,3 +29,7 @@ int main() {
           if (opcao != 3) {
             limparTela();
         }
+          } while (opcao != 3);
+ 
+    return 0;
+}
