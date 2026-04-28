@@ -26,3 +26,6 @@ int main() {
             default:
                 printf("Opcao invalida! Tente novamente.\n");
         }
+          if (opcao != 3) {
+            limparTela();
+        }
