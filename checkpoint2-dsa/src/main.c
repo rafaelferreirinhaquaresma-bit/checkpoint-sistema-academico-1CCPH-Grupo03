@@ -1,23 +1,14 @@
-#include<stdio.h>
-
-void calcularDerivada() {
-    int a, b, c;
-    printf("Digite os coeficientes a, b e c: \n");
-    scanf("%d %d %d", &a, &b, &c); 
-    
-    printf("f'(x) = %dx + %d\n", 2 * a, b);
-}
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+ 
 int main() {
-
     int opcao;
-
+ 
     do {
-        printf("\n--- SISTEMA EQUIPE XYZ ---\n"); 
-        printf("1- Inserir notas\n"); 
-        printf("2- Calcular media\n"); 
-        printf("3- Verificar situacao\n"); 
-        printf("4- Exibir resultado\n"); 
-
-    
-    return 0;
-}
+        printf("--- SISTEMA ACADEMICO DSA ---\n");
+        printf("1. Calcular Media e Classificacao\n");
+        printf("2. Calcular Derivada (Funcao Simples)\n");
+        printf("3. Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
