@@ -77,3 +77,9 @@ void calcularMedia() {
     }
 
 }
+void limparTela() {
+
+    printf("\nPressione Enter para continuar...");
+
+    getchar(); 
+
