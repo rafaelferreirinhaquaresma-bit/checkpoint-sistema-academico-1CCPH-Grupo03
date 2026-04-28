@@ -8,6 +8,13 @@ void calcularDerivada() {
     printf("f'(x) = %dx + %d\n", 2 * a, b);
 }
 int main() {
+
+    int opcao;
+
+    do {
+        printf("\n--- SISTEMA EQUIPE XYZ ---\n"); 
+        printf("1- Inserir notas\n"); 
+        printf("2- Calcular media\n"); 
     
 
     
