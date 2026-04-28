@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
- 
+
+void calcularMedia();
+void calcularDerivada();
+void limparTela();
+
 int main() {
     int opcao;
  
@@ -94,4 +98,5 @@ void limparTela() {
         system("clear");
 
     #endif
+}
 
