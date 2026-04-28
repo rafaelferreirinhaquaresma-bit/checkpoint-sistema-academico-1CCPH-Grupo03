@@ -62,3 +62,18 @@ void calcularMedia() {
     scanf("%f", &coeficiente);
     printf("Digite o expoente (n): ");
     scanf("%d", &expoente);
+     if (expoente == 0) {
+
+        printf("Derivada: f'(x) = 0\n");
+
+    } else {
+
+        float novoCoeficiente = coeficiente * expoente;
+
+        int novoExpoente = expoente - 1;
+
+        printf("Derivada: f'(x) = %.2fx^%d\n", novoCoeficiente, novoExpoente);
+
+    }
+
+}
