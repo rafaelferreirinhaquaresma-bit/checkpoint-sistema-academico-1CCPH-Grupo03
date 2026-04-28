@@ -40,13 +40,25 @@ int main() {
 
 void calcularMedia() {
     float n1, n2, media;
-    printf("\nDigite a Nota 1: ");
-    scanf("%f", &n1);
-    printf("Digite a Nota 2: ");
-    scanf("%f", &n2);
+
+    do {
+        printf("\nDigite a Nota 1 (0 a 10): ");
+        scanf("%f", &n1);
+        if (n1 < 0 || n1 > 10) {
+            printf("Nota invalida! A nota deve estar entre 0 e 10.\n");
+        }
+    } while (n1 < 0 || n1 > 10);
+
+    do {
+        printf("Digite a Nota 2 (0 a 10): ");
+        scanf("%f", &n2);
+        if (n2 < 0 || n2 > 10) {
+            printf("Nota invalida! A nota deve estar entre 0 e 10.\n");
+        }
+    } while (n2 < 0 || n2 > 10);
+
     media = (n1 + n2) / 2;
- 
-    printf("Media: %.2f\n", media);
+    printf("\nMedia: %.2f\n", media);
 
     if (media >= 7.0) {
         printf("Status: APROVADO\n");
@@ -56,30 +68,19 @@ void calcularMedia() {
         printf("Status: REPROVADO\n");
     }
 }
- void calcularDerivada() {
- 
-    float coeficiente;
-    int expoente;
- 
-    printf("\nPara a funcao f(x) = ax^n");
-    printf("\nDigite o coeficiente (a): ");
-    scanf("%f", &coeficiente);
-    printf("Digite o expoente (n): ");
-    scanf("%d", &expoente);
-     if (expoente == 0) {
+void calcularDerivada() {
+    float a, b, c;
 
-        printf("Derivada: f'(x) = 0\n");
+    printf("\n--- CALCULO DE DERIVADA [f(x) = ax^2 + bx + c] ---\n");
+    printf("Digite o coeficiente a: ");
+    scanf("%f", &a);
+    printf("Digite o coeficiente b: ");
+    scanf("%f", &b);
+    printf("Digite o coeficiente c: ");
+    scanf("%f", &c);
 
-    } else {
-
-        float novoCoeficiente = coeficiente * expoente;
-
-        int novoExpoente = expoente - 1;
-
-        printf("Derivada: f'(x) = %.2fx^%d\n", novoCoeficiente, novoExpoente);
-
-    }
-
+    printf("\nFuncao original: f(x) = %.2fx^2 + %.2fx + %.2f\n", a, b, c);
+    printf("Derivada correspondente: f'(x) = %.2fx + %.2f\n", 2 * a, b);
 }
 void limparTela() {
 
