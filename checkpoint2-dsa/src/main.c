@@ -12,3 +12,17 @@ int main() {
         printf("3. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
+
+        switch (opcao) {
+            case 1:
+                calcularMedia();
+                break;
+            case 2:
+                calcularDerivada();
+                break;
+            case 3:
+                printf("Encerrando o sistema...\n");
+                break;
+            default:
+                printf("Opcao invalida! Tente novamente.\n");
+        }
