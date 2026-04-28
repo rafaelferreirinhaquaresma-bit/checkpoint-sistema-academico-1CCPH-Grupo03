@@ -52,4 +52,13 @@ void calcularMedia() {
         printf("Status: REPROVADO\n");
     }
 }
+ void calcularDerivada() {
  
+    float coeficiente;
+    int expoente;
+ 
+    printf("\nPara a funcao f(x) = ax^n");
+    printf("\nDigite o coeficiente (a): ");
+    scanf("%f", &coeficiente);
+    printf("Digite o expoente (n): ");
+    scanf("%d", &expoente);
