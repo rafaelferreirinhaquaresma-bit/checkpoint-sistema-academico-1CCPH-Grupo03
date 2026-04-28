@@ -43,3 +43,13 @@ void calcularMedia() {
     media = (n1 + n2) / 2;
  
     printf("Media: %.2f\n", media);
+
+    if (media >= 7.0) {
+        printf("Status: APROVADO\n");
+    } else if (media >= 4.0) {
+        printf("Status: EXAME FINAL\n");
+    } else {
+        printf("Status: REPROVADO\n");
+    }
+}
+ 
