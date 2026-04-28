@@ -33,3 +33,13 @@ int main() {
  
     return 0;
 }
+
+void calcularMedia() {
+    float n1, n2, media;
+    printf("\nDigite a Nota 1: ");
+    scanf("%f", &n1);
+    printf("Digite a Nota 2: ");
+    scanf("%f", &n2);
+    media = (n1 + n2) / 2;
+ 
+    printf("Media: %.2f\n", media);
